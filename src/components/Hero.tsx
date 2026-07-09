@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from './MenuButton';
 
 type HeroProps = {
   name: string;

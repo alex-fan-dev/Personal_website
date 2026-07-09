@@ -1,15 +1,17 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Footer from './components/Footer';
+// import Navbar from './components/Navbar';
+// import Hero from './components/Hero';
+// import About from './components/About';
+// import Footer from './components/Footer';
+import Home from './components/Home';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Home />
+      {/* <Navbar />
       <Hero name="Vivienne" title="Full Stack Developer" />
       <About />
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
