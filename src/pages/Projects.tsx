@@ -15,7 +15,7 @@ function Projects() {
         <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-emerald-800/70">
           Projects
         </p>
-        <h1 className="text-6xl font-semibold leading-none tracking-tight text-emerald-950 drop-shadow-sm sm:text-8xl">
+        <h1 className="text-5xl font-semibold leading-tight tracking-tight text-emerald-950 sm:text-6xl">
           Selected Projects
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-8 text-emerald-900/75 sm:text-xl">

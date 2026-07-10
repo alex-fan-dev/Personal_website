@@ -9,7 +9,7 @@ function ProjectDetail() {
     return (
       <section className="mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center px-6 py-16 sm:px-10">
         <Link
-          to="/projects"
+          to="/#projects"
           className="mb-8 inline-flex text-sm font-medium text-emerald-800/70 transition hover:text-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
         >
           / Projects
@@ -24,7 +24,7 @@ function ProjectDetail() {
   return (
     <section className="mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center px-6 py-16 sm:px-10">
       <Link
-        to="/projects"
+        to="/#projects"
         className="mb-8 inline-flex text-sm font-medium text-emerald-800/70 transition hover:text-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
       >
         / Projects
