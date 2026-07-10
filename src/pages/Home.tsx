@@ -58,8 +58,8 @@ function Home() {
           Fan
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-          Building thoughtful digital experiences with clean interfaces,
-          practical systems, and a strong eye for detail.
+          Building practical software through curiosity,
+          continuous learning, and thoughtful design.
         </p>
       </div>
 
