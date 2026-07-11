@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import ProjectCard from '../components/ProjectCard';
+import ProjectGrid from '../components/ProjectGrid';
 import { projects } from '../data/projects';
 
 function Projects() {
@@ -23,11 +23,7 @@ function Projects() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-4 lg:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
-        ))}
-      </div>
+      <ProjectGrid projects={projects} />
     </section>
   );
 }

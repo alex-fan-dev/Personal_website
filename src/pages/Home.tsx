@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProjectCard from '../components/ProjectCard';
+import ProjectGrid from '../components/ProjectGrid';
 import { projects } from '../data/projects';
 
 type MenuItemSize = 'large' | 'default';
@@ -146,7 +146,7 @@ function Home() {
         </nav>
       </section>
 
-<section
+      <section
         id="projects"
         className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl scroll-mt-24 flex-col justify-center px-6 py-20 sm:px-10"
       >
@@ -162,11 +162,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-3">
-          {projects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
-        </div>
+        <ProjectGrid projects={projects} />
       </section>
 
       <section

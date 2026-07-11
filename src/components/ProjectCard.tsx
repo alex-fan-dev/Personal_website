@@ -16,7 +16,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <article className="group overflow-hidden rounded-lg border border-emerald-950/15 bg-white/50 shadow-sm shadow-emerald-950/10 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-emerald-950/40 hover:bg-white/75 hover:shadow-xl hover:shadow-emerald-950/15">
-      <div className="relative flex aspect-[16/10] items-end overflow-hidden bg-gradient-to-br from-emerald-200/80 via-lime-100/80 to-white/60 p-5">
+      <div className="relative flex aspect-[16/7] items-end overflow-hidden bg-gradient-to-br from-emerald-200/80 via-lime-100/80 to-white/60 p-5">
         {project.coverImage ? (
           <img
             src={project.coverImage}
@@ -24,7 +24,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             className="absolute inset-0 h-full w-full object-cover"
           />
         ) : null}
-        <div className="relative flex w-full items-end justify-between gap-4">
+        <div className="relative flex w-full items-end gap-4">
           {project.coverLabel ? (
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-900/60">
               {project.coverLabel}
@@ -34,7 +34,12 @@ function ProjectCard({ project }: ProjectCardProps) {
               {project.title}
             </p>
           )}
+        </div>
+      </div>
 
+      <div className="p-6 pt-8">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <h2 className="text-2xl font-medium text-emerald-950">{project.title}</h2>
           {project.status ? (
             <span
               className={`shrink-0 rounded-full border px-3 py-1 text-xs font-semibold ${statusClass[project.status]}`}
@@ -43,10 +48,10 @@ function ProjectCard({ project }: ProjectCardProps) {
             </span>
           ) : null}
         </div>
-      </div>
 
-      <div className="p-6">
-        <div className="flex flex-wrap gap-2">
+        <p className="mt-4 leading-7 text-emerald-900/75">{project.summary}</p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
           {project.techStack.map((tech) => (
             <span
               key={tech}
@@ -56,9 +61,6 @@ function ProjectCard({ project }: ProjectCardProps) {
             </span>
           ))}
         </div>
-
-        <h2 className="mt-6 text-2xl font-medium text-emerald-950">{project.title}</h2>
-        <p className="mt-4 leading-7 text-emerald-900/75">{project.summary}</p>
 
         {hasContributions ? (
           <div className="mt-6 border-t border-emerald-950/10 pt-5">
@@ -76,13 +78,40 @@ function ProjectCard({ project }: ProjectCardProps) {
           </div>
         ) : null}
 
-        <Link
-          to={`/projects/${project.slug}`}
-          className="mt-6 inline-flex text-sm font-semibold text-emerald-950 transition group-hover:translate-x-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
-        >
-          View Case Study /
-        </Link>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {project.demoUrl ? (
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-full border border-emerald-950/15 bg-white/50 px-4 py-2 text-sm font-semibold text-emerald-950 transition hover:-translate-y-0.5 hover:border-emerald-950/40 hover:bg-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
+            >
+              Live Demo ↗
+            </a>
+          ) : null}
+
+          {project.githubUrl ? (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-full border border-emerald-950/15 bg-white/50 px-4 py-2 text-sm font-semibold text-emerald-950 transition hover:-translate-y-0.5 hover:border-emerald-950/40 hover:bg-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
+            >
+              GitHub ↗
+            </a>
+          ) : null}
+
+          {!project.demoUrl && !project.githubUrl ? (
+            <Link
+              to={`/projects/${project.slug}`}
+              className="inline-flex rounded-full border border-emerald-950/15 bg-white/50 px-4 py-2 text-sm font-semibold text-emerald-950 transition group-hover:-translate-y-0.5 hover:border-emerald-950/40 hover:bg-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
+            >
+              View Case Study /
+            </Link>
+          ) : null}
+        </div>
       </div>
+
     </article>
   );
 }
