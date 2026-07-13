@@ -16,26 +16,27 @@ function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <article className="group overflow-hidden rounded-lg border border-emerald-950/15 bg-white/50 shadow-sm shadow-emerald-950/10 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-emerald-950/40 hover:bg-white/75 hover:shadow-xl hover:shadow-emerald-950/15">
-      <div className="relative flex aspect-[16/7] items-end overflow-hidden bg-gradient-to-br from-emerald-200/80 via-lime-100/80 to-white/60 p-5">
-        {project.coverImage ? (
-          <img
-            src={project.coverImage}
-            alt={project.title}
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-        ) : null}
-        <div className="relative flex w-full items-end gap-4">
-          {project.coverLabel ? (
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-900/60">
-              {project.coverLabel}
-            </p>
-          ) : (
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-900/60">
-              {project.title}
-            </p>
-          )}
+      {project.coverImage ? (
+        <img
+          src={project.coverImage}
+          alt={project.title}
+          className="block h-auto w-full"
+        />
+      ) : (
+        <div className="flex aspect-[16/7] items-end overflow-hidden bg-gradient-to-br from-emerald-200/80 via-lime-100/80 to-white/60 p-5">
+          <div className="flex w-full items-end gap-4">
+            {project.coverLabel ? (
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-900/60">
+                {project.coverLabel}
+              </p>
+            ) : (
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-900/60">
+                {project.title}
+              </p>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="p-6 pt-8">
         <div className="flex flex-wrap items-start justify-between gap-4">

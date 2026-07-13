@@ -33,11 +33,11 @@ export const projects: Project[] = [
     "Frontend Testing",
     "Notification Features",
 ],
-    coverImage: "/images/projects/cityquest-cover.png"
+    coverImage: "/images/projects/cityquest-cover.png",
 
     // githubUrl: "...",
 
-    // demoUrl: "...",
+    demoUrl: "https://project-gbq3d.vercel.app/",
   },
   {
     slug: 'pokemon-storage-system',
