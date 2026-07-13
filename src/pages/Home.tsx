@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ProjectGrid from '../components/ProjectGrid';
+import OtherWork from './OtherWork';
 import { projects } from '../data/projects';
 
 type MenuItemSize = 'large' | 'default';
@@ -207,7 +208,7 @@ function Home() {
         </div>
       </section>
 
-      
+      <OtherWork />
 
       <section
         id="contact"
