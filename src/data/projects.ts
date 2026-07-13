@@ -74,5 +74,6 @@ export const projects: Project[] = [
     techStack: ['React', 'TypeScript', 'React Router', 'Tailwind CSS'],
     status: "In Progress",
     coverLabel: 'Portfolio homepage',
+    coverImage: "/images/projects/personal-website-cover.png"
   },
 ];
