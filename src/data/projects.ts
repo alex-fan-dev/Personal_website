@@ -4,7 +4,7 @@ export type Project = {
   summary: string;
   techStack: string[];
   layout: 'full' | 'half';
-  status?: "Completed" | "In Progress" | "Planned";
+  status?: "🟢 Live" | "Improving" | "Coming Soon" | "Planned";
   coverImage?: string;
   coverLabel?: string;
   githubUrl?: string;
@@ -26,7 +26,7 @@ export const projects: Project[] = [
       'PostgreSQL',
       'Supabase',
     ],
-    status: "Completed",
+    status: "🟢 Live",
     contributions: [
     "Challenge Pages",
     "API Integration",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
 ],
     coverImage: "/images/projects/cityquest-cover.png",
 
-    // githubUrl: "...",
+    githubUrl: "https://github.com/UOA-CS732-S1-2026/group-project-shimmering-shrews",
 
     demoUrl: "https://project-gbq3d.vercel.app/",
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
       
     ],
   
-    status: "Completed",
+    status: "🟢 Live",
    
     coverImage: "/images/projects/pokemon-storage-system-cover.png",
 
@@ -63,16 +63,16 @@ export const projects: Project[] = [
     summary: 'A scheduling workflow concept for booking, managing, and reviewing appointments.',
     layout: 'half',
     techStack: ['React', 'TypeScript', 'Tailwind CSS'],
-    status: "Planned",
+    status: "Coming Soon",
     coverLabel: 'Booking dashboard',
   },
   {
     slug: 'personal-website',
     title: 'Personal Website',
-    summary: 'A minimal portfolio with a unified green visual system and simple project storytelling.',
+    summary: 'A personal portfolio built to showcase my projects and experience, while demonstrating my frontend development skills.',
     layout: 'half',
     techStack: ['React', 'TypeScript', 'React Router', 'Tailwind CSS'],
-    status: "In Progress",
+    status: "Improving",
     coverLabel: 'Portfolio homepage',
     coverImage: "/images/projects/personal-website-cover.png"
   },

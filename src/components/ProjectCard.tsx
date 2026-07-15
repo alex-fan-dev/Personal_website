@@ -6,9 +6,10 @@ type ProjectCardProps = {
 };
 
 const statusClass: Record<NonNullable<Project['status']>, string> = {
-  Completed: 'border-emerald-700/20 bg-emerald-100/70 text-emerald-900',
-  'In Progress': 'border-lime-700/20 bg-lime-100/70 text-lime-900',
-  Planned: 'border-teal-700/20 bg-teal-100/70 text-teal-900',
+  '🟢 Live': 'border-emerald-700/20 bg-emerald-100/70 text-emerald-900',
+  'Improving': 'border-lime-700/20 bg-lime-100/70 text-lime-900',
+  'Coming Soon': 'border-teal-700/20 bg-teal-100/70 text-teal-900',
+  Planned: 'border-purple-700/20 bg-purple-100/70 text-purple-900',
 };
 
 function ProjectCard({ project }: ProjectCardProps) {
@@ -102,14 +103,14 @@ function ProjectCard({ project }: ProjectCardProps) {
             </a>
           ) : null}
 
-          {!project.demoUrl && !project.githubUrl ? (
+          {/* {!project.demoUrl && !project.githubUrl ? (
             <Link
               to={`/projects/${project.slug}`}
               className="inline-flex rounded-full border border-emerald-950/15 bg-white/50 px-4 py-2 text-sm font-semibold text-emerald-950 transition group-hover:-translate-y-0.5 hover:border-emerald-950/40 hover:bg-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
             >
               View Case Study /
             </Link>
-          ) : null}
+          ) : null} */}
         </div>
       </div>
 
