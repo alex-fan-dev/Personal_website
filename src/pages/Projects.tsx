@@ -4,7 +4,7 @@ import { projects } from '../data/projects';
 
 function Projects() {
   return (
-    <section className="mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center px-6 py-16 sm:px-10">
+    <section className="mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-center px-5 py-16 sm:px-8 lg:px-10">
       <div className="max-w-3xl">
         <Link
           to="/"
