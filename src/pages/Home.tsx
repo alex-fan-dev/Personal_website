@@ -32,7 +32,7 @@ const stats = [
 const contactLinks = [
   { label: 'Email', href: 'mailto:fanweiwei3456@gmail.com' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/viviennefan/' },
-  { label: 'Download CV', href: '/Vivienne_Fan_CV.pdf' },
+  { label: 'Download CV', href: '/Jul_VIVIENNE_FAN_CV.pdf' },
 ];
 
 const skills = ['React', 'TypeScript', 'Spring Boot', 'Software Testing'];
