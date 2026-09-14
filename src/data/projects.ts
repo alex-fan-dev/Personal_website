@@ -4,7 +4,7 @@ export type Project = {
   summary: string;
   techStack: string[];
   layout: 'full' | 'half';
-  status?: "🟢 Live" | "🟡 In Development" | "Improving" | "Coming Soon" | "Planned";
+  status?: "🟢 Live" | "🔵 In Development" | "Improving" | "Coming Soon" | "Planned";
   coverImage?: string;
   coverLabel?: string;
   githubUrl?: string;
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       'React',
       'PostgreSQL',
     ],
-    status: "🟡 In Development",
+    status: "🔵 In Development",
     contributions: [
       'Solution Research & Ideation',
       'MVP Scoping',
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     summary: 'A playful AI experience that turns everyday wishes into magical solutions — with unexpected side effects.',
     layout: 'half',
     techStack: [],
-    status: "🟡 In Development",
+    status: "🔵 In Development",
     coverLabel: 'Oddbrew',
     coverImage: '/images/projects/oddbrew-cover.png',
     githubUrl: 'https://github.com/alex-fan-dev/Oddbrew',
@@ -103,6 +103,7 @@ export const projects: Project[] = [
     techStack: ['React', 'TypeScript', 'Tailwind CSS'],
     status: "Coming Soon",
     coverLabel: 'Booking dashboard',
+    coverImage: '/images/projects/appointment-system.png',
     githubUrl: 'https://github.com/alex-fan-dev/appointment-reminder-system',
   },
 ];
