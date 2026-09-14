@@ -12,11 +12,11 @@ const navItems = [
 
 const stats = [
   {
-    value: '3',
+    value: '4',
     label: 'Industry Internships',
   },
   {
-    value: '3',
+    value: '5',
     label: 'Featured Projects',
   },
   {
@@ -32,7 +32,7 @@ const stats = [
 const contactLinks = [
   { label: 'Email', href: 'mailto:fanweiwei3456@gmail.com' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/viviennefan/' },
-  { label: 'Download CV', href: '/Jul_VIVIENNE_FAN_CV.pdf' },
+  { label: 'Download CV', href: '/Vivienne_FAN_CV.pdf' },
 ];
 
 const skills = ['React', 'TypeScript', 'Spring Boot', 'Software Testing'];
@@ -74,27 +74,27 @@ function Home() {
 
       <section
         id="home"
-        className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl scroll-mt-24 items-center overflow-hidden px-6 py-24 sm:px-10"
+        className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl scroll-mt-24 items-center overflow-hidden px-6 py-24 sm:px-10 lg:px-14 xl:px-16"
       >
-        <div className="relative w-full py-10 sm:py-14 lg:py-16">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-y-0 right-0 hidden w-[38%] md:block"
-          >
-            <div className="absolute right-10 top-6 size-56 rotate-12 rounded-[2.5rem] border border-white/45 bg-white/15 shadow-xl shadow-emerald-900/5 backdrop-blur-sm lg:right-16 lg:size-64" />
-            <div className="absolute bottom-4 right-36 size-40 -rotate-12 rounded-full border border-emerald-700/10 bg-emerald-200/20 backdrop-blur-md lg:right-52 lg:size-48" />
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 rotate-6 rounded-2xl border border-emerald-950/10 bg-white/20 px-7 py-6 font-mono text-sm leading-7 text-emerald-900/20 shadow-lg shadow-emerald-950/5 backdrop-blur-md">
-              <span className="block">{'<build>'}</span>
-              <span className="block pl-5">test · learn</span>
-              <span className="block">{'</build>'}</span>
-            </div>
+        <div className="grid w-full items-center gap-12 py-12 md:grid-cols-[minmax(240px,0.72fr)_minmax(0,1.28fr)] md:gap-8 md:py-14 lg:gap-12 lg:py-16">
+          <div className="relative mx-auto w-full max-w-[15rem] sm:max-w-[17rem] md:max-w-[18rem] lg:max-w-[19rem] xl:max-w-[22rem]">
+            <div
+              aria-hidden="true"
+              className="absolute -inset-3 rotate-3 rounded-[2.25rem] border border-emerald-950/10 bg-white/30 shadow-xl shadow-emerald-950/10 backdrop-blur-sm"
+            />
+            <img
+              src="/images/profile.jpg"
+              alt="Vivienne Fan by the waterfront"
+              className="relative aspect-[3/4] w-full rounded-[2rem] border border-white/60 object-cover shadow-2xl shadow-emerald-950/20"
+              fetchPriority="high"
+            />
           </div>
 
-          <div className="relative z-10 max-w-4xl">
+          <div className="relative z-10 max-w-3xl">
             <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-emerald-800/70">
               Software Developer
             </p>
-            <h1 className="text-6xl font-semibold leading-[0.92] tracking-tight text-emerald-950 drop-shadow-sm sm:text-8xl lg:text-9xl">
+            <h1 className="text-6xl font-semibold leading-[0.92] tracking-tight text-emerald-950 drop-shadow-sm sm:text-7xl lg:text-8xl">
               Vivienne Fan
             </h1>
             <p className="mt-6 text-xl font-medium tracking-tight text-emerald-800 sm:text-2xl">
@@ -163,13 +163,10 @@ function Home() {
             learning by doing.
           </h2>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-            Computer Science graduate currently pursuing a Master of Information Technology
-            at the University of Auckland.
+            I like learning by building — taking an idea, breaking it into smaller pieces, and figuring things out as I go. I'm naturally curious about how things work and enjoy experimenting with new technologies, ideas, and ways of solving problems.
           </p>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-            I enjoy building practical software through full-stack development, software
-            testing, and continuous learning. I'm particularly interested in creating
-            user-focused applications that solve real-world problems.
+            Outside of tech, I enjoy swimming, surfing, and boxing — although probably not as often as this sentence makes it sound.
           </p>
         </div>
 

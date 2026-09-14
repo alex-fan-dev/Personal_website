@@ -2,11 +2,11 @@ import { Link } from 'react-router';
 
 const stats = [
   {
-    value: '3',
+    value: '4',
     label: 'Industry Internships',
   },
   {
-    value: '3',
+    value: '5',
     label: 'Featured Projects',
   },
   {
@@ -39,13 +39,10 @@ function About() {
   learning by doing.
 </h1>
         <p className="mt-8 max-w-2xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-          Computer Science graduate currently pursuing a Master of Information Technology
-          at the University of Auckland.
+          I like learning by building — taking an idea, breaking it into smaller pieces, and figuring things out as I go. I'm naturally curious about how things work and enjoy experimenting with new technologies, ideas, and ways of solving problems.
         </p>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-          I enjoy building practical software through full-stack development, software
-          testing, and continuous learning. I'm particularly interested in creating
-          user-focused applications that solve real-world problems.
+          Outside of tech, I enjoy swimming, surfing, boxing, and spending time by the sea. I’m always looking for something new to learn, build, or try.
         </p>
       </div>
 
