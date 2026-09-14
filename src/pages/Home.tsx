@@ -92,7 +92,7 @@ function Home() {
 
           <div className="relative z-10 max-w-3xl">
             <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-emerald-800/70">
-              Software Developer
+              IT STUDENT · SOFTWARE BUILDER
             </p>
             <h1 className="text-6xl font-semibold leading-[0.92] tracking-tight text-emerald-950 drop-shadow-sm sm:text-7xl lg:text-8xl">
               Vivienne Fan
