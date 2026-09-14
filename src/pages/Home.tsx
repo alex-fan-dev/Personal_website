@@ -16,7 +16,7 @@ const stats = [
     label: 'Industry Internships',
   },
   {
-    value: '5',
+    value: '2',
     label: 'Featured Projects',
   },
   {
@@ -35,7 +35,7 @@ const contactLinks = [
   { label: 'Download CV', href: '/Vivienne_FAN_CV.pdf' },
 ];
 
-const skills = ['React', 'TypeScript', 'Spring Boot', 'Software Testing'];
+const skills = ['React', 'TypeScript', 'Software Testing', 'Mobile · Exploring' ];
 
 function Home() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
