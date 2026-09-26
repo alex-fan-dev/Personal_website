@@ -148,6 +148,8 @@ function Home() {
         <ProjectGrid projects={projects} className="mt-8" />
       </section>
 
+      <OtherWork />
+
       <section
         id="about"
         className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl scroll-mt-24 flex-col justify-center gap-14 px-6 py-20 sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:gap-20"
@@ -186,8 +188,6 @@ function Home() {
           ))}
         </div>
       </section>
-
-      <OtherWork />
 
       <section
         id="contact"

@@ -19,7 +19,7 @@ function OtherWork() {
           Supporting Work
         </h2>
         <p className="mt-6 max-w-xl text-base leading-7 text-emerald-900/70 sm:text-lg">
-          Additional work that adds context to my project experience.
+          Additional work across industry development, testing, and data.
         </p>
       </div>
 
