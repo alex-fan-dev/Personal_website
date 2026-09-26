@@ -7,6 +7,13 @@ export type OtherWorkItem = {
 
 export const otherWork: OtherWorkItem[] = [
   {
+    title: 'Heart Disease Data Mining',
+    description:
+      'Built an end-to-end Python data mining workflow for heart disease classification, covering data preparation, feature transformation, machine learning model comparison, and iterative evaluation.',
+    type: 'Data Mining',
+    href: 'https://github.com/alex-fan-dev/heart-disease-data-mining',
+  },
+  {
     title: 'Shopify Storefront Development',
     description:
       'Worked on theme customisation, reusable storefront components, responsive behaviour, and testing for a live Shopify store.',
