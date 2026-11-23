@@ -1,4 +1,4 @@
-import CompactProjectCard from './CompactProjectCard';
+import ProjectCard from './ProjectCard';
 import type { Project } from '../data/projects';
 
 type ProjectGridProps = {
@@ -16,7 +16,7 @@ function ProjectGrid({ projects, className = 'mt-12' }: ProjectGridProps) {
     <div className={`${className} grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-6`}>
       {projects.map((project) => (
         <div key={project.slug} className={`${projectLayoutClass[project.layout]} h-full`}>
-          <CompactProjectCard project={project} />
+          <ProjectCard project={project} />
         </div>
       ))}
     </div>

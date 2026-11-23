@@ -1,12 +1,10 @@
-import { Link } from 'react-router';
-
 const stats = [
   {
     value: '4',
     label: 'Industry Internships',
   },
   {
-    value: '5',
+    value: '2',
     label: 'Featured Projects',
   },
   {
@@ -19,30 +17,30 @@ const stats = [
   },
 ];
 
-function About() {
+function AboutSection() {
   return (
-    <section className="mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center gap-14 px-6 py-16 sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:gap-20">
+    <section
+      id="about"
+      className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl scroll-mt-24 flex-col justify-center gap-14 px-6 py-20 sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:gap-20"
+    >
       <div className="max-w-3xl">
-        <Link
-          to="/"
-          className="mb-8 inline-flex text-sm font-medium text-emerald-800/70 transition hover:text-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-950"
-        >
-          / Home
-        </Link>
         <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-emerald-800/70">
           About Me
         </p>
-        <h1 className="text-5xl font-semibold leading-tight tracking-tight text-emerald-950 sm:text-6xl">
-  Building software with{" "}
-  <span className="text-emerald-600 italic">curiosity</span>,
-  <br />
-  learning by doing.
-</h1>
+        <h2 className="text-5xl font-semibold leading-tight tracking-tight text-emerald-950 sm:text-6xl">
+          Building software with{' '}
+          <span className="italic text-emerald-600">curiosity</span>,
+          <br />
+          learning by doing.
+        </h2>
         <p className="mt-8 max-w-2xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-          I like learning by building — taking an idea, breaking it into smaller pieces, and figuring things out as I go. I'm naturally curious about how things work and enjoy experimenting with new technologies, ideas, and ways of solving problems.
+          I like learning by building — taking an idea, breaking it into smaller pieces, and figuring
+          things out as I go. I'm naturally curious about how things work and enjoy experimenting
+          with new technologies, ideas, and ways of solving problems.
         </p>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-emerald-900/75 sm:text-xl">
-          Outside of tech, I enjoy swimming, surfing, boxing, and spending time by the sea. I’m always looking for something new to learn, build, or try.
+          Outside of tech, I enjoy swimming, surfing, and boxing — although probably not as often as
+          this sentence makes it sound.
         </p>
       </div>
 
@@ -65,4 +63,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;

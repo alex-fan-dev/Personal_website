@@ -1,7 +1,7 @@
-import OtherWorkCard from '../components/OtherWorkCard';
-import { otherWork } from '../data/OtherWorkCard';
+import OtherWorkCard from '../OtherWorkCard';
+import { otherWork } from '../../data/OtherWorkCard';
 
-function OtherWork() {
+function OtherWorkSection() {
   if (otherWork.length === 0) {
     return null;
   }
@@ -32,4 +32,4 @@ function OtherWork() {
   );
 }
 
-export default OtherWork;
+export default OtherWorkSection;
